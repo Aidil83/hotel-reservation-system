@@ -22,6 +22,17 @@ const Footer = () => {
   );
 };
 
-const FooterContainer = styled.div``;
+const FooterContainer = styled.div`
+  position: fixed;
+  bottom: 20px;
+  left: 10%;
+  height: 63px;
+  width: 80%;
+  background-color: #fff;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+`;
 
 export default Footer;
