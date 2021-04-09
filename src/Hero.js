@@ -1,7 +1,7 @@
 import curtain_hotel from "./images/curtain_hotel.jpg";
 import star_ratings from "./images/star_ratings.png";
 
-const Card = () => {
+const Hero = () => {
   return (
     <div className="hero__card">
       <img src={curtain_hotel} className="hero__image" />
@@ -17,4 +17,4 @@ const Card = () => {
   );
 };
 
-export default Card;
+export default Hero;
