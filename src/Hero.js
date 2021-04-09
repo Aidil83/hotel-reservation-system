@@ -1,3 +1,4 @@
+import "./Hero.css";
 import curtain_hotel from "./images/curtain_hotel.jpg";
 import star_ratings from "./images/star_ratings.png";
 
