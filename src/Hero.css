@@ -1,5 +1,6 @@
 .hero {
   display: flex;
+  overflow-x: scroll;
 }
 
 .hero__card {
