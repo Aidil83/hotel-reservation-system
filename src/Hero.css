@@ -1,6 +1,10 @@
 .hero {
+  height: 100%;
+  max-height: 600px;
+  width: 100%;
   display: flex;
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .hero__card {
