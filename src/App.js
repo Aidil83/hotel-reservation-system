@@ -6,6 +6,7 @@ import albert_vincent_hotel from "./images/albert_vincent_hotel.jpg";
 import dana_hotel from "./images/dana_hotel.jpg";
 import olexandr_hotel from "./images/olexandr_hotel.jpg";
 import venice_hotel from "./images/venice_hotel.jpg";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 function App() {
   return (
