@@ -14,7 +14,7 @@ const Hero = ({ image, card_data }) => {
           name="half-rating-read"
           defaultValue={rating}
           precision={0.5}
-          style={{ color: "#44baff" }}
+          style={{ color: "#44baff", marginBottom: 35 }}
           readOnly
         />
         <div className="hero__footer">
