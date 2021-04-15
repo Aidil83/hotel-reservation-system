@@ -1,13 +1,13 @@
 export const card_data = [
   {
     title: "The Curtain Room",
-    rating: 5,
-    price: 600,
+    rating: 4.5,
+    price: 650,
   },
   {
     title: "Albert Vincent Room",
     rating: 4,
-    price: 200,
+    price: 225,
   },
   {
     title: "Dana Room",
@@ -16,8 +16,8 @@ export const card_data = [
   },
   {
     title: "Olexandr Room",
-    rating: 2,
-    price: 100,
+    rating: 1.5,
+    price: 75,
   },
   {
     title: "Venice Room",
