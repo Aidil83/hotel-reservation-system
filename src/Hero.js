@@ -1,5 +1,4 @@
 import "./Hero.css";
-import star_ratings from "./images/star_ratings.png";
 import Rating from "@material-ui/lab/Rating";
 
 const Hero = ({ image, card_data }) => {
