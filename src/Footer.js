@@ -4,14 +4,22 @@ import twotonePayments from "@iconify/icons-ic/twotone-payments";
 import mail24Regular from "@iconify/icons-fluent/mail-24-regular";
 import profileIcon from "@iconify/icons-gg/profile";
 import styled from "styled-components";
+import { useHistory } from "react-router-dom";
 
 const Footer = () => {
+  const history = useHistory();
   return (
     <FooterContainer>
-      <Icon icon={bxHome} style={{ color: "#add8e6", fontSize: "38px" }} />
       <Icon
+        icon={bxHome}
+        style={{ color: "#add8e6", fontSize: "38px" }}
+        onClick={() => history.push("/")}
+      />
+      <Icon
+        to="/checkout"
         icon={twotonePayments}
         style={{ color: "#add8e6", fontSize: "46px" }}
+        onClick={() => history.push("/checkout")}
       />
       <Icon
         icon={mail24Regular}
