@@ -12,7 +12,7 @@ export const card_data = [
   {
     title: "Dana Room",
     rating: 3,
-    price: 500,
+    price: 150,
   },
   {
     title: "Olexandr Room",

@@ -69,6 +69,8 @@
   margin-right: 10px;
   margin-bottom: 5px;
   cursor: pointer;
+  text-decoration: none;
+  color: #000;
 }
 
 .book-room:hover {

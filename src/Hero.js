@@ -1,5 +1,6 @@
 import "./Hero.css";
 import Rating from "@material-ui/lab/Rating";
+import { Link } from "react-router-dom";
 
 const Hero = ({ image, card_data }) => {
   const { title, rating, price } = card_data;
@@ -18,7 +19,9 @@ const Hero = ({ image, card_data }) => {
         />
         <div className="hero__footer">
           <div className="pricing">${price}</div>
-          <div className="book-room">BOOK ROOM</div>
+          <Link to="/checkout" className="book-room">
+            BOOK ROOM
+          </Link>
         </div>
       </div>
     </div>
