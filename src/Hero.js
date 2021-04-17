@@ -1,9 +1,18 @@
 import "./Hero.css";
 import Rating from "@material-ui/lab/Rating";
-import { Link } from "react-router-dom";
+import { useHistory } from "react-router-dom";
+import { useState } from "react";
 
 const Hero = ({ image, card_data }) => {
   const { title, rating, price } = card_data;
+  const [booked, setBooked] = useState({});
+  const history = useHistory();
+  const handleClick = () => {
+    setBooked(card_data, image);
+    console.log(booked);
+    history.push("/checkout");
+  };
+
   return (
     <div className="hero__card">
       <img src={image} className="hero__image" />
@@ -19,9 +28,12 @@ const Hero = ({ image, card_data }) => {
         />
         <div className="hero__footer">
           <div className="pricing">${price}</div>
-          <Link to="/checkout" className="book-room">
+          <div to="/checkout" className="book-room" onClick={handleClick}>
             BOOK ROOM
-          </Link>
+          </div>
+          {/* <div className="book-room" onClick={handleClick}>
+            BOOK ROOM
+          </div> */}
         </div>
       </div>
     </div>
