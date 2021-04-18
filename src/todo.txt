@@ -1,1 +1,1 @@
-1) Pass by prop the description name.
+1) Work on checkout page.

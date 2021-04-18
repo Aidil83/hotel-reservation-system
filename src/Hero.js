@@ -1,15 +1,20 @@
 import "./Hero.css";
 import Rating from "@material-ui/lab/Rating";
 import { useHistory } from "react-router-dom";
-import { useState } from "react";
+import { useContext } from "react";
+import { StateContext } from "./context/StateProvider";
 
 const Hero = ({ image, card_data }) => {
   const { title, rating, price } = card_data;
-  const [booked, setBooked] = useState({});
+  const [, dispatch] = useContext(StateContext);
+
   const history = useHistory();
   const handleClick = () => {
-    setBooked(card_data, image);
-    console.log(booked);
+    dispatch({
+      type: "TRACKCARD",
+      payload: { card_data, image },
+    });
+
     history.push("/checkout");
   };
 

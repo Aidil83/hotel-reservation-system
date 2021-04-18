@@ -1,5 +1,18 @@
+import { useContext } from "react";
+import { StateContext } from "./context/StateProvider";
+
 const Checkout = () => {
-  return <h1>Checkout component</h1>;
+  const [{ trackCard }] = useContext(StateContext);
+  const {
+    card_data: { title, rating, price },
+    image,
+  } = trackCard;
+  console.log(title);
+  console.log(rating);
+  console.log(price);
+  console.log(image);
+
+  return <h1></h1>;
 };
 
 export default Checkout;
