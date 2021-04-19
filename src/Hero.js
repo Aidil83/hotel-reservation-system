@@ -20,7 +20,7 @@ const Hero = ({ image, card_data }) => {
 
   return (
     <div className="hero__card">
-      <img src={image} className="hero__image" />
+      <img src={image} alt="pic" className="hero__image" />
       <div className="hero__info">
         <div className="hero__title">{title}</div>
 

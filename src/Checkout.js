@@ -3,16 +3,14 @@ import { StateContext } from "./context/StateProvider";
 
 const Checkout = () => {
   const [{ trackCard }] = useContext(StateContext);
-  const {
-    card_data: { title, rating, price },
-    image,
-  } = trackCard;
-  console.log(title);
-  console.log(rating);
-  console.log(price);
-  console.log(image);
+  const { card_data, image } = trackCard;
+  const { title, rating, price } = card_data;
 
-  return <h1></h1>;
+  return (
+    <>
+      <img src={image} alt={`${title} pic`} />
+    </>
+  );
 };
 
 export default Checkout;
