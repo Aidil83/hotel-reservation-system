@@ -32,7 +32,7 @@ const Hero = ({ image, card_data }) => {
           readOnly
         />
         <div className="hero__footer">
-          <div className="pricing">${price}</div>
+          <div className="hero__pricing">${price}</div>
           <div to="/checkout" className="book-room" onClick={handleClick}>
             BOOK ROOM
           </div>
