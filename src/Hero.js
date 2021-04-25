@@ -36,9 +36,6 @@ const Hero = ({ image, card_data }) => {
           <div to="/checkout" className="book-room" onClick={handleClick}>
             BOOK ROOM
           </div>
-          {/* <div className="book-room" onClick={handleClick}>
-            BOOK ROOM
-          </div> */}
         </div>
       </div>
     </div>
